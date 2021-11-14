@@ -26,6 +26,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 2rem 3rem;
+    position: relative;
 }
 
 .card img {
@@ -61,7 +62,8 @@ h2 {
 }
 
 .created {
-    margin-top: 30px;
+    position: absolute;
+    bottom: 30px;
     color: gray;
     font-size: 90%;
 }
