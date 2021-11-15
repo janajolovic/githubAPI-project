@@ -12,8 +12,8 @@ const createCard = () => {
                 <p>${data.bio}</p>
                 <div class="info">
                     <div class="follow">
-                        <a href="followers.html" class="f followers"><i class="fas fa-user-friends"></i>${data.followers} followers</a>
-                        <a href="" class="f following"><i class="fas fa-user-friends"></i>${data.following}  following</a>
+                        <a href="followers.html"><i class="fas fa-user-friends"></i>${data.followers} followers</a>
+                        <a href="following.html"><i class="fas fa-user-friends"></i>${data.following}  following</a>
                     </div>
                     <a href="" class="repos">${data.public_repos} repositories</a>
             `
