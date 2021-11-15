@@ -12,10 +12,10 @@ const createCard = () => {
                 <p>${data.bio}</p>
                 <div class="info">
                     <div class="follow">
-                        <button class="f followers"><i class="fas fa-user-friends"></i>${data.followers} followers</button>
-                        <button class="f following"><i class="fas fa-user-friends"></i>${data.following}  following</button>
+                        <a href="followers.html" class="f followers"><i class="fas fa-user-friends"></i>${data.followers} followers</a>
+                        <a href="" class="f following"><i class="fas fa-user-friends"></i>${data.following}  following</a>
                     </div>
-                    <button class="repos">${data.public_repos} repositories</button>
+                    <a href="" class="repos">${data.public_repos} repositories</a>
             `
             if (data.company) {
                 html += `<p><i class="far fa-building"></i>${data.company}</p>`

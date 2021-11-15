@@ -69,25 +69,16 @@ h2 {
 }
 
 .username {
-    color: gray;
     font-size: 120%;
+}
+
+.card a {
+    color: gray;
     text-decoration: none;
 }
 
-.username:hover {
-    text-decoration: underline;
-}
-
-.card button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    font-family: "Poppins", sans-serif;
-    font-size: 100%;
-}
-
-.card button:hover {
-    color: gray;
+.card a:hover {
+    color: black;
 }
 
 .repos {
