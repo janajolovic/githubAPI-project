@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6dfdf;
+}
+
+.card {
+    box-shadow: 0px 4px 21px -12px rgba(0, 0, 0, 0.79);
+    border-radius: 1rem;
+    width: 35%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+}
+
+
+
+.user {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: #c2c2c2 solid 1px;
+    padding: 10px 0;
+}
+
+.img {
+    display: flex;
+    width: 20%;
+    position: absolute;
+    left: 30px;
+}
+
+.user .img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-name h4 {
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-info p {
+    margin: 3px 0;
+}
