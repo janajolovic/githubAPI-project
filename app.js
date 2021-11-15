@@ -15,7 +15,7 @@ const createCard = () => {
                         <a href="followers.html"><i class="fas fa-user-friends"></i>${data.followers} followers</a>
                         <a href="following.html"><i class="fas fa-user-friends"></i>${data.following}  following</a>
                     </div>
-                    <a href="" class="repos">${data.public_repos} repositories</a>
+                    <a href="repo.html" class="repos">${data.public_repos} repositories</a>
             `
             if (data.company) {
                 html += `<p><i class="far fa-building"></i>${data.company}</p>`
