@@ -33,13 +33,13 @@ body {
 .repo {
     min-height: 25%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     border-bottom: #c2c2c2 solid 1px;
-    padding: 10px 2rem;
+    padding: 1rem 2rem 0 2rem;
 }
 
 .repo-data {
@@ -62,16 +62,27 @@ body {
     margin-left: 10px;
 }
 
+.desc {
+    font-size: 90%;
+}
+
+.created {
+    position: absolute;
+    bottom: 10px;
+    color: gray;
+    font-size: 90%;
+}
+
 .repo-data a {
     text-decoration: none;
-    color: black;
+    color: #0084ff;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .repo-data a:hover {
     text-decoration: underline;
 }
-
 
 .close-btn {
     position: absolute;
