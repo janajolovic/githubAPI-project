@@ -9,7 +9,6 @@ const createCard = () => {
             data.forEach(user => {
                 html += `
                     <div class="user">
-                        <a href="index.html"class='close-btn'><i class="fas fa-times"></i></a>
                         <div class="img">
                             <img src="${user.avatar_url}" alt="">
                         </div>
@@ -18,8 +17,8 @@ const createCard = () => {
                         </div>
                     </div>
                 `
-
             })
+            html += `<a href="index.html" class="close-btn"><i class="fas fa-times"></i></a>`
             card.innerHTML = html;
         })
 }
