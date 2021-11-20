@@ -5,6 +5,7 @@ const createCard = () => {
     fetch("https://api.github.com/users/janajolovic/following")
         .then(response => response.json())
         .then(data => {
+            console.log(data)
             let html = "";
             data.forEach(user => {
                 html += `
