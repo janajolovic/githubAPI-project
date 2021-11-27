@@ -12,11 +12,13 @@ const createCard = async () => {
 
         const repo_data = document.createElement("div");
         repo_data.classList.add("repo-data")
+
         const name = document.createElement("a");
         name.href = repo.html_url;
         name.target = "_blank";
         name.innerHTML = repo.name;
         repo_data.appendChild(name);
+        
         const vis = document.createElement("div");
         vis.id = "visibility";
         vis.innerHTML = repo.visibility;
@@ -52,6 +54,5 @@ const createCard = async () => {
     card.append(btn); 
 
 }
-
 
 createCard()
