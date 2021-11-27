@@ -4,21 +4,37 @@ const card = document.querySelector(".card");
 const createCard = async () => {
     response = await fetch("https://api.github.com/users/janajolovic/followers")
     data = await response.json();
-    let html = "";
+    
     data.forEach(user => {
-        html += `
-            <div class="user">
-                <div class="img">
-                    <img src="${user.avatar_url}" alt="">
-                </div>
-                <div class="user-data">
-                    <a href="${user.html_url}" target="_blank">${user.login}</a>
-                </div>
-            </div>
-        `
+        
+        const user_div = document.createElement("div");
+        user_div.classList.add("user");
+
+        const img_div = document.createElement("div");
+        img_div.classList.add("img")
+        const img = document.createElement("img");
+        img.src = user.avatar_url;
+        img_div.appendChild(img);
+
+        const user_data = document.createElement("div");
+        user_data.classList.add("user-data")
+        const name = document.createElement("a");
+        name.href = user.html_url;
+        name.innerHTML = user.login;
+        user_data.appendChild(name);
+
+        user_div.appendChild(img_div);
+        user_div.appendChild(user_data);
+
+        card.appendChild(user_div);
     })
-    html += `<a href="index.html" class="close-btn"><i class="fas fa-times"></i></a>`
-    card.innerHTML = html
+
+    const btn = document.createElement("a");
+    btn.href = "index.html";
+    btn.classList.add("close-btn");
+    btn.innerHTML = `<i class="fas fa-times"></i>`;
+
+    card.append(btn); 
 }
 
 
